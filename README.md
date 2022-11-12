@@ -1,5 +1,5 @@
-# Домашнє завдання #5<br><br>
+# Домашнє завдання #6<br><br>
 
 
-[Подивитись на GitHub Pages](https://attygoit.github.io/goit-markup-hw-05/)<br>
-[Подивитись код у репозиторії](https://github.com/attygoit/goit-markup-hw-05)
+[Подивитись на GitHub Pages](https://attygoit.github.io/goit-markup-hw-06/)<br>
+[Подивитись код у репозиторії](https://github.com/attygoit/goit-markup-hw-06)
