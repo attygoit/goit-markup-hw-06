@@ -251,7 +251,7 @@ img {
   background-color: var(--accent-color);
 }
 
-.footer-social-icon {
+.footer-icons {
   fill: var(--accent-text-color);
 }
 
@@ -259,7 +259,7 @@ img {
   margin-left: 70px;
 }
 
-.footer-social-header {
+.footer-social {
   display: flex;
   margin-bottom: 20px;
   font-weight: 700;
@@ -270,23 +270,105 @@ img {
   color: var(--accent-text-color);
 }
 
+ /* .subscription {
+
+ } */
+
+ .sub-label {
+  display: flex;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+.footer-sub-form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+  
+}
+
+.footer-sub-input {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.sub_input_btn {
+  display: flex;
+}
+
+.sub-btn {
+  display: flex;
+  flex-direction: row;
+  min-width: 200px;
+  height: 50px;
+  margin-left: 12px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  border: none;
+  cursor: pointer;
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
+  
+  align-items: center;
+
+}
+
+.sub_btn_text {
+margin-left: 28px;
+margin-right: 10px;
+}
+.sub_btn_ico {
+width: 24px;
+height: 24px;
+border: 2px solid transparent;
+border-radius: 4px;
+background-origin: border-box;
+
+
+}
+						
 /* СТУДІЯ */
 
 /* Hero header - основний заголовок + кнопка замовлення послуги */
 
 .hero {
   display: flex;
+  background-position: center;
   background-image: linear-gradient(to right,
       var(--hero-bg-color),
       var(--hero-bg-color)),
     url(../img/hero-bg-img.jpeg);
   background-color: var(--accent-bg-color);
-  max-width: 1600px;
+  min-width: 1600px;
+  /* max-width: 1600px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   padding-top: 200px;
   padding-bottom: 200px;
+ 
+  
 }
 
 .hero-header {
@@ -690,4 +772,118 @@ img {
   width: 100%;
   height: 100%;
   background-color: var(--accent-text-color);
+}
+
+.callback {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.cta-callback {
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-button-text-color);
+}
+
+.cta-form-wrapper {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.cta-input-wrapper {
+position: relative;
+display: flex;
+flex-direction: column;
+margin-bottom: 10px;
+}
+
+.cta-label {
+margin-bottom: 4px;
+}
+
+.cta-icons {
+position: absolute;
+left: 15px;
+top:50%;
+transform: translateY(-50%);
+fill: var(--header-button-text-color);
+
+}
+
+.cta-input {
+  width: 100%;
+  padding: 12px 12px 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.cta-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.cta-input:focus + .cta-icons {
+  fill: var(--accent-color);
+}
+
+.cta-text-area {
+  display: flex;
+  min-height: 120px;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+}
+
+.cta-rbtn-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-radio-btn {
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  fill: var(--header-button-text-color);
+  }
+
+.cta-agreement {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+.agreement-link {
+color: var(--accent-color);
+}
+
+.callback-btn {
+  display: flex;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  min-width: 200px;
+  min-height: 50px;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin: 20px auto 40px;
+  padding: 10px 52px;
+}
+
+.callback-btn:active,
+.callback-btn:focus,
+.callback-btn:hover {
+  background-color: var(--order-button-bg-color);
 }
