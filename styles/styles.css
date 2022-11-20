@@ -34,6 +34,10 @@ img {
   display: block;
 }
 
+svg path {
+  fill: inherit;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -303,6 +307,8 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  outline: none;
+  color: rgba(255, 255, 255, 0.6);;
 }
 
 .sub_input_btn {
@@ -338,14 +344,13 @@ img {
 margin-left: 28px;
 margin-right: 10px;
 }
+
 .sub_btn_ico {
 width: 24px;
 height: 24px;
 border: 2px solid transparent;
 border-radius: 4px;
 background-origin: border-box;
-
-
 }
 						
 /* СТУДІЯ */
@@ -480,10 +485,6 @@ background-origin: border-box;
   background-color: var(--activity-bg-color);
   opacity: 1;
 }
-
-/* .activity-description:hover {
-  opacity: 1;
-} */
 
 /* Наша команда (фото співробітників та підпис - прізвище, імʼя та назва посади, іконки соцмереж) */
 
@@ -792,6 +793,7 @@ background-origin: border-box;
 .cta-form-wrapper {
   display: flex;
   flex-direction: column;
+  
  
 }
 
@@ -800,6 +802,7 @@ position: relative;
 display: flex;
 flex-direction: column;
 margin-bottom: 10px;
+
 }
 
 .cta-label {
@@ -812,7 +815,6 @@ left: 15px;
 top:50%;
 transform: translateY(-50%);
 fill: var(--header-button-text-color);
-
 }
 
 .cta-input {
@@ -820,6 +822,7 @@ fill: var(--header-button-text-color);
   padding: 12px 12px 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
 }
 
 .cta-input:focus {
@@ -838,25 +841,43 @@ fill: var(--header-button-text-color);
   width: 100%;
 }
 
-.cta-rbtn-position {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.check-line {
+  position: relative;
+display: flex;
+flex-direction: column;
+margin-bottom: 30px;
+
 }
 
-.cta-radio-btn {
-  display: inline-block;
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-  fill: var(--header-button-text-color);
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
-.cta-agreement {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
+.icon-wrapper {
+  display: flex;
+  align-self: center;
+  margin-right: 7px;
+  border: 2px solid var(--header-button-text-color);
+  border-radius: 4px;
+}
+
+.check-icon {
+  fill: var(--accent-text-color);
+  background-color: transparent;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked .check-icon{
+  background: var(--accent-color);
+}
+
+.checkbox input:checked + .icon-wrapper {
+  fill: var(--accent-text-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .agreement-link {
@@ -878,7 +899,7 @@ color: var(--accent-color);
   color: var(--accent-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin: 20px auto 40px;
+  margin: 0px auto 40px;
   padding: 10px 52px;
 }
 

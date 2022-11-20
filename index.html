@@ -464,13 +464,24 @@
 				<label type="textarea" for="comment" class="cta-label">Коментар</label>
 				<textarea id="comment" name="comment" class="cta-input cta-text-area" autocorrect="on" placeholder="Введіть текст" ></textarea>
 					</div>
-					<div class="cta-input-wrapper">
-						<div class="cta-rbtn-position">
-						<input type="radio" id="cta-radio-btn" name="cta-radio-btn"  class="cta-input cta-radio-btn" checked>
-						<p class="cta-agreement">Погоджуюcь із розсилкою та приймаю <a href="" class="agreement-link">Умови договору</a></p>	
-						</div>
+
+					<div class="check-line">
+						<label class="checkbox" for="agree-checkbox">
+							<input type="checkbox" id="agree-checkbox" value="agree" name="agree-check" class="visually-hidden custom-box">
+							<span class="icon-wrapper">
+								<svg class="check-icon" width="16" height="15">
+									<use href="./img/icons.svg#ico-check"></use>
+								</svg>
+							</span>
+						Погоджуюcь із розсилкою та приймаю&nbsp  
+							<a href="" class="agreement-link">Умови договору</a>	
+						</label>
 					</div>
 					
+
+
+
+
 				<button type="submit" class="callback-btn">Відправити</button>
 				
 			</div>
