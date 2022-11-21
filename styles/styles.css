@@ -657,7 +657,6 @@ background-origin: border-box;
   display: block;
   position: relative;
   overflow: hidden;
-
 }
 
 .portfolio-card-link:focus,
@@ -666,7 +665,6 @@ background-origin: border-box;
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-
 }
 
 .portfolio-description {
@@ -711,6 +709,7 @@ background-origin: border-box;
   opacity: 0;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(.92,.24,1,.73);
 }
+
 .portfolio-card-link:hover .portfolio-card-overlay {
   position: absolute;
   /* transform: translateY(0%); */
@@ -763,6 +762,10 @@ background-origin: border-box;
   border-radius: 50%;
 }
 
+.modal-close-btn:hover {
+  fill: var(--accent-color);
+}
+
 .modal-x {
   display: flex;
   align-items: center;
@@ -783,6 +786,7 @@ background-origin: border-box;
 
 .cta-callback {
   margin-bottom: 12px;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
@@ -793,8 +797,6 @@ background-origin: border-box;
 .cta-form-wrapper {
   display: flex;
   flex-direction: column;
-  
- 
 }
 
 .cta-input-wrapper {
@@ -802,11 +804,18 @@ position: relative;
 display: flex;
 flex-direction: column;
 margin-bottom: 10px;
-
 }
 
 .cta-label {
-margin-bottom: 4px;
+line-height: 10.16px;
+box-sizing: border-box;
+margin-bottom: 7px;
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17px;
+letter-spacing: 0.01em;
+color: var(--main-text-color);
 }
 
 .cta-icons {
@@ -846,7 +855,6 @@ fill: var(--header-button-text-color);
 display: flex;
 flex-direction: column;
 margin-bottom: 30px;
-
 }
 
 .checkbox{
