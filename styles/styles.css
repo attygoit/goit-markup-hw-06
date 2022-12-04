@@ -200,6 +200,7 @@ svg path {
 .footer-block {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .address-list {
@@ -352,14 +353,6 @@ svg path {
 margin-left: 28px;
 margin-right: 10px;
 }
-
-/* .sub-btn-ico {
-width: 24px;
-height: 24px;
-border: 2px solid transparent;
-border-radius: 4px;
-background-origin: border-box;
-} */
 						
 /* СТУДІЯ */
 
@@ -370,13 +363,13 @@ background-origin: border-box;
   background-position: center;
   background-image: linear-gradient(to right, var(--hero-bg-color), var(--hero-bg-color)), url(../img/hero-bg-img.jpeg);
   background-color: var(--accent-bg-color);
-  min-width: 1600px;
-  /* max-width: 1600px; */
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin: 0 auto;
  
   
 }
